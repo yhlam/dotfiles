@@ -128,9 +128,10 @@ set wildignore+=*.pyc  " Ignore python byte codes
 " Python-mode
 " A collection of python utilities for Vim
 Bundle 'klen/python-mode'
-let g:pymode_rope=0            " Disable rope support
-let g:pymode_breakpoint = 0    " Disable default breakpoint hot-key
-let g:pymode_doc=0             " Disable python documentation
+let g:pymode_rope=0                " Disable rope support
+let g:pymode_breakpoint = 0        " Disable default breakpoint hot-key
+let g:pymode_doc=0                 " Disable python documentation
+let g:pymode_lint_ignore="E501"    " Ignore line length error
 
 
 " jedi-vim
