@@ -173,9 +173,9 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 " Fold python code nicely and toggle with one keystroke
 "
 " Usage:
-" f    fold / unfold current function / class
-" F    fold / unfold all functions and classes in the file
-Bundle 'vim-scripts/Efficient-python-folding'
+" <leader>z    fold / unfold current function / class
+" <leader>Z    fold / unfold all functions and classes in the file
+Bundle 'yhlam/Efficient-python-folding'
 set nofoldenable
 
 
