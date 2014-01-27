@@ -179,6 +179,21 @@ Bundle 'yhlam/Efficient-python-folding'
 set nofoldenable
 
 
+" pytest.vim
+" Runs your UnitTests with py.test displaying red/green bars and errors
+"
+" Usage:
+" <leader>f    test file
+" <leader>c    test class
+" <leader>m    test method
+" <leader>p    test project
+Bundle 'alfredodeza/pytest.vim'
+nmap <silent><Leader>f <Esc>:Pytest file<CR>
+nmap <silent><Leader>c <Esc>:Pytest class<CR>
+nmap <silent><Leader>m <Esc>:Pytest method<CR>
+nmap <silent><Leader>p <Esc>:Pytest project<CR>
+
+
 " commentary.vim
 " Comment stuff out
 " Comment / uncomment lines by pressing ``\\\``
