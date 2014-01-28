@@ -187,11 +187,13 @@ set nofoldenable
 " <leader>c    test class
 " <leader>m    test method
 " <leader>p    test project
-Bundle 'alfredodeza/pytest.vim'
-nmap <silent><Leader>f <Esc>:Pytest file<CR>
-nmap <silent><Leader>c <Esc>:Pytest class<CR>
-nmap <silent><Leader>m <Esc>:Pytest method<CR>
-nmap <silent><Leader>p <Esc>:Pytest project<CR>
+" <leader>w    clear test loop
+Bundle 'yhlam/pytest.vim'
+nmap <silent><Leader>f <Esc>:Pytest file loop<CR>
+nmap <silent><Leader>c <Esc>:Pytest class loop<CR>
+nmap <silent><Leader>m <Esc>:Pytest method loop<CR>
+nmap <silent><Leader>p <Esc>:Pytest project loop<CR>
+nmap <silent><Leader>w <Esc>:Pytest clear<CR>
 
 
 " commentary.vim
