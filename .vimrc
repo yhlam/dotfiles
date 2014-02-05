@@ -196,6 +196,15 @@ nmap <silent><Leader>p <Esc>:Pytest project loop<CR>
 nmap <silent><Leader>w <Esc>:Pytest clear<CR>
 
 
+" vim-isort
+" Vim plugin to sort python imports using isort
+"
+" Usage
+" :Isort    Reorder imports of the current python file
+" Ctrl-i    Sort the import of the selected block
+Bundle 'fisadev/vim-isort'
+
+
 " commentary.vim
 " Comment stuff out
 " Comment / uncomment lines by pressing ``\\\``
