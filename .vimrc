@@ -205,6 +205,16 @@ nmap <silent><Leader>w <Esc>:Pytest clear<CR>
 Bundle 'fisadev/vim-isort'
 
 
+" django.vim
+" Syntax highlighting for Django templates
+"
+" Usage
+" :setfiletype htmldjango    syntax highlighting for Django HTML templates
+" :setfiletype django        syntax highlighting for Django templates but not
+"                            HTML higlighting
+Bundle 'vim-scripts/django.vim'
+
+
 " commentary.vim
 " Comment stuff out
 " Comment / uncomment lines by pressing ``\\\``
