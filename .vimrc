@@ -283,5 +283,11 @@ Bundle 'basepi/vim-conque'
 " ,e    camel case end
 Bundle 'bkad/CamelCaseMotion'
 
+
+" MatchTag
+" Highlights the matching HTML tag when the cursor is positioned on a tag
+Bundle 'yhlam/MatchTag'
+
+
 " Required by vundle
 filetype plugin indent on
