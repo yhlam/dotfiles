@@ -81,6 +81,8 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
+au Filetype html setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au Filetype htmldjango setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 
 " Color
