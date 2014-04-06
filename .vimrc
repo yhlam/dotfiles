@@ -301,5 +301,11 @@ Bundle 'bkad/CamelCaseMotion'
 Bundle 'yhlam/MatchTag'
 
 
+" fugitive
+" Git wrapper
+Bundle 'tpope/vim-fugitive'
+set statusline=%{fugitive#statusline()}
+
+
 " Required by vundle
 filetype plugin indent on
