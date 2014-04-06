@@ -146,8 +146,8 @@ let g:pymode_lint_ignore="E501"    " Ignore line length error
 " <leader>r    Renaming
 " <leader>n    Usages (shows all the usages of a name)
 " :Pyimport    Open module, e.g. :Pyimport os (opens the os module)
-" <Leader>b    Set, unset breakpoint
-Bundle 'davidhalter/jedi-vim'
+" <leader>b    Set, unset breakpoint
+Bundle 'davidhalter/jedi-vim', {"autoload": {"filetypes": ["python", "python3"]}}
 let g:jedi#related_names_command = "<leader>z"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
