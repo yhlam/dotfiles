@@ -56,7 +56,7 @@ syntax on
 
 " Showing line numbers and length
 set number " show line numbers
-set tw=79 " width of document (used by gd)
+set tw=79 " width of document (used by gq)
 set nowrap " don't automatically wrap on load
 set fo-=t " don't automatically wrap text when typing
 autocmd FileType python  setlocal colorcolumn=80,100,120
