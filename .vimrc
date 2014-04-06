@@ -217,6 +217,18 @@ Bundle 'fisadev/vim-isort'
 Bundle 'vim-scripts/django.vim'
 
 
+" vim-pydocstring
+" Generate Python docstring to your Python script file
+"
+" Usage
+" :Pydocstring    generate doc string when the cursor is on
+"                 def or class keyword line
+" <Leader>k       generate doc string when the cursor is on
+"                 def or class keyword line
+Bundle 'heavenshell/vim-pydocstring'
+nmap <silent><Leader>k <Plug>(pydocstring)
+
+
 " commentary.vim
 " Comment stuff out
 " Comment / uncomment lines by pressing ``\\\``
