@@ -308,5 +308,11 @@ Bundle 'tpope/vim-fugitive'
 set statusline=%{fugitive#statusline()}
 
 
+" NerdTree
+" A tree explorer plugin for vim.
+Bundle 'scrooloose/nerdtree'
+map <leader>p :NERDTreeToggle<CR>
+
+
 " Required by vundle
 filetype plugin indent on
