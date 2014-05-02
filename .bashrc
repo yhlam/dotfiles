@@ -25,6 +25,9 @@ alias wanip='curl ifconfig.me/ip'
 # 256 colors
 export TERM="xterm-256color"
 
+# use vim as default editor
+export EDITOR='vim'
+
 # local machine specific profile setup
 if [ -f ~/.bashrc_local ]; then
     source ~/.bashrc_local
