@@ -291,10 +291,13 @@ Bundle 'basepi/vim-conque'
 " Motion for CamelCase and snake_case
 "
 " Usage:
-" ,w    camel case word
-" ,b    camel case back
-" ,e    camel case end
+" W    camel case word
+" B    camel case back
+" E    camel case end
 Bundle 'bkad/CamelCaseMotion'
+map <S-W> <Plug>CamelCaseMotion_w
+map <S-B> <Plug>CamelCaseMotion_b
+map <S-E> <Plug>CamelCaseMotion_e
 
 
 " MatchTag
