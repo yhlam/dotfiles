@@ -23,7 +23,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias wanip='curl ifconfig.me/ip'
 
 # 256 colors
-export TERM="xterm-256color"
+export TERM="screen-256color"
 
 # use vim as default editor
 export EDITOR='vim'
