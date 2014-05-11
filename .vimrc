@@ -144,11 +144,11 @@ let g:pymode_lint_ignore="E501"    " Ignore line length error
 " <leader>d    Goto definitions (follow identifier as far as possible, includes imports and statements)
 " K            Show Documentation/Pydoc (shows a popup with assignments)
 " <leader>r    Renaming
-" <leader>n    Usages (shows all the usages of a name)
+" <leader>j    Usages (shows all the usages of a name)
 " :Pyimport    Open module, e.g. :Pyimport os (opens the os module)
 " <leader>b    Set, unset breakpoint
 Bundle 'davidhalter/jedi-vim', {"autoload": {"filetypes": ["python", "python3"]}}
-let g:jedi#usages_command = "<leader>z"
+let g:jedi#usages_command = "<leader>j"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 let g:jedi#completions_command = "<C-n>"
