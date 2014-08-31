@@ -19,3 +19,5 @@
 	tool = vimdiff
 [mergetool "diffmerge"]
 	cmd = diffmerge -m -r=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[push]
+	default = simple
