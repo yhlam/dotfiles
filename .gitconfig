@@ -16,6 +16,6 @@
 [diff]
 	tool = meld
 [merge]
-	tool = diffmerge
+	tool = vimdiff
 [mergetool "diffmerge"]
 	cmd = diffmerge -m -r=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
