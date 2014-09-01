@@ -317,5 +317,10 @@ Bundle 'scrooloose/nerdtree'
 map <leader>p :NERDTreeToggle<CR>
 
 
+" argtextobj.vim
+" Text-object like motion for arguments
+Bundle 'vim-scripts/argtextobj.vim'
+
+
 " Required by vundle
 filetype plugin indent on
