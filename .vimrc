@@ -322,6 +322,11 @@ map <leader>p :NERDTreeToggle<CR>
 Plugin 'vim-scripts/argtextobj.vim'
 
 
+" Emmet-Vim
+" Expand abbreviations similar to emmet
+Plugin 'mattn/emmet-vim'
+
+
 " Required by vundle
 call vundle#end()
 filetype plugin indent on
