@@ -96,20 +96,20 @@ set background=dark
 " $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 "
 " Usage:
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install (update) bundles
-" :BundleSearch(!) foo - search (or refresh cache first) for foo
-" :BundleClean(!)      - confirm (or auto-approve) removal of unused bundles
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 " see :h vundle for more details or wiki for FAQ
 set nocompatible
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+call vundle#begin()
+Plugin 'gmarik/vundle'
 
 
 " Powerline
 " Better-looking, more functional vim statusline
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
 
@@ -121,14 +121,14 @@ set laststatus=2
 "  Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode.
 "  Run :CtrlPBuffer or :CtrlPMRU to invoke CtrlP in find buffer or find MRU file mode.
 "  Run :CtrlPMixed to search in Files, Buffers and MRU files at the same time.
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc  " Ignore python byte codes
 
 
 " Python-mode
 " A collection of python utilities for Vim
-Bundle 'klen/python-mode'
+Plugin 'klen/python-mode'
 let g:pymode_rope=0                " Disable rope support
 let g:pymode_breakpoint = 0        " Disable default breakpoint hot-key
 let g:pymode_doc=0                 " Disable python documentation
@@ -147,7 +147,7 @@ let g:pymode_lint_ignore="E501"    " Ignore line length error
 " <leader>j    Usages (shows all the usages of a name)
 " :Pyimport    Open module, e.g. :Pyimport os (opens the os module)
 " <leader>b    Set, unset breakpoint
-Bundle 'davidhalter/jedi-vim', {"autoload": {"filetypes": ["python", "python3"]}}
+Plugin 'davidhalter/jedi-vim'
 let g:jedi#usages_command = "<leader>j"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
@@ -178,7 +178,7 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 " Usage:
 " <leader>z    fold / unfold current function / class
 " <leader>Z    fold / unfold all functions and classes in the file
-Bundle 'yhlam/Efficient-python-folding'
+Plugin 'yhlam/Efficient-python-folding'
 set nofoldenable
 
 
@@ -191,7 +191,7 @@ set nofoldenable
 " <leader>m    test method
 " <leader>p    test project
 " <leader>w    clear test loop
-Bundle 'yhlam/pytest.vim'
+Plugin 'yhlam/pytest.vim'
 nmap <silent><Leader>f <Esc>:Pytest file loop<CR>
 nmap <silent><Leader>c <Esc>:Pytest class loop<CR>
 nmap <silent><Leader>m <Esc>:Pytest method loop<CR>
@@ -205,7 +205,7 @@ nmap <silent><Leader>w <Esc>:Pytest clear<CR>
 " Usage
 " :Isort    Reorder imports of the current python file
 " Ctrl-i    Sort the import of the selected block
-Bundle 'fisadev/vim-isort'
+Plugin 'fisadev/vim-isort'
 
 
 " django.vim
@@ -215,7 +215,7 @@ Bundle 'fisadev/vim-isort'
 " :setfiletype htmldjango    syntax highlighting for Django HTML templates
 " :setfiletype django        syntax highlighting for Django templates but not
 "                            HTML higlighting
-Bundle 'vim-scripts/django.vim'
+Plugin 'vim-scripts/django.vim'
 
 
 " vim-pydocstring
@@ -226,14 +226,14 @@ Bundle 'vim-scripts/django.vim'
 "                 def or class keyword line
 " <Leader>k       generate doc string when the cursor is on
 "                 def or class keyword line
-Bundle 'heavenshell/vim-pydocstring'
+Plugin 'heavenshell/vim-pydocstring'
 nmap <silent><Leader>k <Plug>(pydocstring)
 
 
 " commentary.vim
 " Comment stuff out
 " Comment / uncomment lines by pressing ``\\\``
-Bundle 'tpope/vim-commentary'
+Plugin 'tpope/vim-commentary'
 au FileType python set commentstring=#%s
 
 
@@ -244,29 +244,29 @@ au FileType python set commentstring=#%s
 " cs"'     change the " into '
 " ds"      delete the "
 " ysiw(    insert () surround a word
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 
 " sensible.vim
 " Extra settings for vim
-Bundle 'tpope/vim-sensible'
+Plugin 'tpope/vim-sensible'
 
 
 " Extra text objects
 " ea    Select the entire content of the current buffer
 " ia    Like ia, but leading and trailing empty lines are excluded
-Bundle 'kana/vim-textobj-user'
-Bundle 'kana/vim-textobj-entire'
+Plugin 'kana/vim-textobj-user'
+Plugin 'kana/vim-textobj-entire'
 
 
 " MiniBufExpl
 " Batter way to view the buffers
-Bundle 'fholgado/minibufexpl.vim'
+Plugin 'fholgado/minibufexpl.vim'
 
 
 " Riv
 " reStructuredText in Vim
-Bundle 'Rykka/riv.vim'
+Plugin 'Rykka/riv.vim'
 
 
 " Vim trailing whitespace
@@ -274,7 +274,7 @@ Bundle 'Rykka/riv.vim'
 "
 " Usage:
 " :FixWhitespace    Remove all trailing whitespaces
-Bundle 'bronson/vim-trailing-whitespace'
+Plugin 'bronson/vim-trailing-whitespace'
 
 
 " Conque
@@ -284,7 +284,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 " :ConqueTerm bash
 " :ConqueTermSplit mysql -h localhost -u joe -p sock_collection
 " :ConqueTerm python
-Bundle 'basepi/vim-conque'
+Plugin 'basepi/vim-conque'
 
 
 " CamelCaseMotion.vim
@@ -294,7 +294,7 @@ Bundle 'basepi/vim-conque'
 " W    camel case word
 " B    camel case back
 " E    camel case end
-Bundle 'bkad/CamelCaseMotion'
+Plugin 'bkad/CamelCaseMotion'
 map <S-W> <Plug>CamelCaseMotion_w
 map <S-B> <Plug>CamelCaseMotion_b
 map <S-E> <Plug>CamelCaseMotion_e
@@ -302,25 +302,26 @@ map <S-E> <Plug>CamelCaseMotion_e
 
 " MatchTag
 " Highlights the matching HTML tag when the cursor is positioned on a tag
-Bundle 'yhlam/MatchTag'
+Plugin 'yhlam/MatchTag'
 
 
 " fugitive
 " Git wrapper
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 set statusline=%{fugitive#statusline()}
 
 
 " NerdTree
 " A tree explorer plugin for vim.
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 map <leader>p :NERDTreeToggle<CR>
 
 
 " argtextobj.vim
 " Text-object like motion for arguments
-Bundle 'vim-scripts/argtextobj.vim'
+Plugin 'vim-scripts/argtextobj.vim'
 
 
 " Required by vundle
+call vundle#end()
 filetype plugin indent on
