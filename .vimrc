@@ -132,7 +132,6 @@ set wildignore+=*.pyc  " Ignore python byte codes
 " A collection of python utilities for Vim
 Plugin 'klen/python-mode'
 let g:pymode_rope=0                " Disable rope support
-let g:pymode_breakpoint = 0        " Disable default breakpoint hot-key
 let g:pymode_doc=0                 " Disable python documentation
 let g:pymode_lint_ignore="E501"    " Ignore line length error
 
@@ -154,7 +153,7 @@ let g:jedi#usages_command = "<leader>j"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 let g:jedi#completions_command = "<C-n>"
-map <Leader>b Oimport pudb; pudb.set_trace() # BREAKPOINT<C-c>
+
 
 " Better navigating through omnicomplete option list
 " See http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
