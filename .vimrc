@@ -83,6 +83,8 @@ set shiftround
 set expandtab
 au Filetype html setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au Filetype htmldjango setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au Filetype css setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 
 " Color
