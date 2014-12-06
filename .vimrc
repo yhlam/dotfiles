@@ -133,7 +133,19 @@ set wildignore+=*.pyc  " Ignore python byte codes
 Plugin 'klen/python-mode'
 let g:pymode_rope=0                " Disable rope support
 let g:pymode_doc=0                 " Disable python documentation
-let g:pymode_lint_ignore="E501"    " Ignore line length error
+let g:pymode_lint=0                " Disable code checking
+
+
+" syntastic
+" Syntax checking hacks for vim
+"
+" Setup:
+" Require flake8 in virtualenv
+" $ pip install flake8
+"
+" Usage:
+" :Errors    Display the errors for the current buffer
+Plugin 'scrooloose/syntastic'
 
 
 " jedi-vim
