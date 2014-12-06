@@ -48,12 +48,6 @@ vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
 
 
-" Enable syntax highlighting
-" You need to reload this file for the change to apply
-filetype off
-filetype plugin indent on
-syntax on
-
 " Showing line numbers and length
 set number " show line numbers
 set tw=79 " width of document (used by gq)
@@ -104,6 +98,7 @@ set background=dark
 " :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 " see :h vundle for more details or wiki for FAQ
 set nocompatible
+filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 Plugin 'gmarik/vundle'
@@ -340,6 +335,18 @@ Plugin 'vim-scripts/argtextobj.vim'
 " Emmet-Vim
 " Expand abbreviations similar to emmet
 Plugin 'mattn/emmet-vim'
+
+
+" UltiSnips
+" The ultimate snippet solution for Vim
+"
+" Usage:
+" Tab         Expand snippet
+" Ctrl+Tab    List snippets
+" Ctrl+j      Jump forward
+" Ctrl+k      Jump backward
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 
 " Required by vundle
