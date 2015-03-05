@@ -273,8 +273,6 @@ Plugin 'fholgado/minibufexpl.vim'
 " Riv
 " reStructuredText in Vim
 Plugin 'Rykka/riv.vim'
-Bundle "Rykka/clickable.vim"
-Bundle "Rykka/os.vim"
 
 
 " Vim trailing whitespace
