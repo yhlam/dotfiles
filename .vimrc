@@ -345,6 +345,11 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 
+" vim-jsx
+" React JSX syntax highlighting and indenting for vim.
+Plugin 'mxw/vim-jsx'
+
+
 " Required by vundle
 call vundle#end()
 filetype plugin indent on
