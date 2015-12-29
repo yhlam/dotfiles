@@ -121,6 +121,11 @@ let g:ctrlp_max_height = 30
 set wildignore+=*.pyc  " Ignore python byte codes
 
 
+" python-syntax
+" Python syntax highlighting script for Vim
+Plugin 'hdima/python-syntax'
+
+
 " Python-mode
 " A collection of python utilities for Vim
 Plugin 'klen/python-mode'
