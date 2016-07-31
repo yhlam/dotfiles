@@ -102,10 +102,10 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 
-" Powerline
-" Better-looking, more functional vim statusline
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+" Airline
+" Lean & mean status/tabline for vim that's light as air
+Plugin 'vim-airline/vim-airline'
+let g:airline_powerline_fonts = 1
 set laststatus=2
 
 
