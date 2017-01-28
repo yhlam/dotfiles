@@ -84,5 +84,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Override the alaias rm="rm -i" in the common-alias plugin
+alias rm="rm -I"
+
 # Source Local Configuration
 source ~/.zshrc_local
