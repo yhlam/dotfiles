@@ -267,7 +267,7 @@ nmap <silent><Leader>k <Plug>(pydocstring)
 
 " commentary.vim
 " Comment stuff out
-" Comment / uncomment lines by pressing ``\\\``
+" Comment / uncomment lines by pressing ``gcc``
 Plugin 'tpope/vim-commentary'
 au FileType python set commentstring=#%s
 
