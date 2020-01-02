@@ -299,6 +299,13 @@ Plugin 'kana/vim-textobj-entire'
 Plugin 'Rykka/riv.vim'
 
 
+" Clickable
+" Open link in vim
+Plugin 'Rykka/clickable.vim'
+Plugin 'Rykka/clickable-things'
+Plugin 'Rykka/os.vim'
+
+
 " Vim trailing whitespace
 " Highlight all trailing whitespace in red
 "
