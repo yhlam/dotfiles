@@ -380,6 +380,10 @@ Plugin 'honza/vim-snippets'
 " React JSX syntax highlighting and indenting for vim.
 Plugin 'mxw/vim-jsx'
 
+" vim-toml
+" TOML syntax hightlight
+Plugin 'cespare/vim-toml'
+
 
 " Required by vundle
 call vundle#end()
