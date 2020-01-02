@@ -87,5 +87,8 @@ fi
 # Override the alaias rm="rm -i" in the common-alias plugin
 alias rm="rm -I"
 
+# 256 colors
+export TERM="xterm-256color"
+
 # Source Local Configuration
 source ~/.zshrc_local
