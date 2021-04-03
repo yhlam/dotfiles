@@ -6,6 +6,8 @@ ln -s $DIR/tmux.conf $HOME/.tmux.conf
 ln -s $DIR/gitconfig $HOME/.gitconfig
 ln -s $DIR/inputrc $HOME/.inputrc
 ln -s $DIR/bashrc_extras $HOME/.bashrc_extras
+mkdir -p $HOME/.vim/pack
+ln -s -T $DIR/vim-plugins $HOME/.vim/pack/plugins
 
 
 SOURCE_BASHRC_EXTRAS="source $HOME/.bashrc_extras"

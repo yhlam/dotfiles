@@ -1,0 +1,69 @@
+[submodule "vim-plugins/start/argtextobj.vim"]
+	path = vim-plugins/start/argtextobj.vim
+	url = https://github.com/vim-scripts/argtextobj.vim.git
+[submodule "vim-plugins/start/CamelCaseMotion"]
+	path = vim-plugins/start/CamelCaseMotion
+	url = https://github.com/bkad/CamelCaseMotion.git
+[submodule "vim-plugins/start/ctrlp.vim"]
+	path = vim-plugins/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "vim-plugins/start/FastFold"]
+	path = vim-plugins/start/FastFold
+	url = https://github.com/Konfekt/FastFold.git
+[submodule "vim-plugins/start/indentpython.vim"]
+	path = vim-plugins/start/indentpython.vim
+	url = https://github.com/vim-scripts/indentpython.vim.git
+[submodule "vim-plugins/start/riv.vim"]
+	path = vim-plugins/start/riv.vim
+	url = https://github.com/Rykka/riv.vim.git
+[submodule "vim-plugins/start/SimpylFold"]
+	path = vim-plugins/start/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold.git
+[submodule "vim-plugins/start/syntastic"]
+	path = vim-plugins/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "vim-plugins/start/vim-airline"]
+	path = vim-plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim-plugins/start/vim-airline-themes"]
+	path = vim-plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim-plugins/start/vim-commentary"]
+	path = vim-plugins/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim-plugins/start/vim-fugitive"]
+	path = vim-plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim-plugins/start/vim-lucius"]
+	path = vim-plugins/start/vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius
+[submodule "vim-plugins/start/vim-sensible"]
+	path = vim-plugins/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "vim-plugins/start/vim-surround"]
+	path = vim-plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim-plugins/start/vim-textobj-entire"]
+	path = vim-plugins/start/vim-textobj-entire
+	url = https://github.com/kana/vim-textobj-entire.git
+[submodule "vim-plugins/start/vim-textobj-user"]
+	path = vim-plugins/start/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user.git
+[submodule "vim-plugins/start/vim-toml"]
+	path = vim-plugins/start/vim-toml
+	url = https://github.com/cespare/vim-toml.git
+[submodule "vim-plugins/start/vim-trailing-whitespace"]
+	path = vim-plugins/start/vim-trailing-whitespace
+	url = https://github.com/bronson/vim-trailing-whitespace.git
+[submodule "vim-plugins/start/nerdtree"]
+	path = vim-plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim-plugins/start/jedi-vim"]
+	path = vim-plugins/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim-plugins/start/supertab"]
+	path = vim-plugins/start/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim-plugins/start/vim-numbertoggle"]
+	path = vim-plugins/start/vim-numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
