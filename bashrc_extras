@@ -1,0 +1,15 @@
+# 256 colors
+export TERM="screen-256color"
+
+# use vim as default editor
+export EDITOR='vim'
+
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# local machine specific profile setup
+if [ -f ~/.bashrc_local ]; then
+    source ~/.bashrc_local
+fi
