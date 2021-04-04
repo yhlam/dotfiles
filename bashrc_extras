@@ -9,6 +9,12 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# pipx
+export PATH="$PATH:/$HOME/.local/bin"
+
+# poetry
+export PATH="$PATH:/$HOME/.poetry/bin"
+
 # local machine specific profile setup
 if [ -f ~/.bashrc_local ]; then
     source ~/.bashrc_local
