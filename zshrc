@@ -109,6 +109,9 @@ export PATH="$PATH:/$HOME/.local/bin"
 # poetry
 export PATH="$PATH:/$HOME/.poetry/bin"
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # local machine specific profile setup
 if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local

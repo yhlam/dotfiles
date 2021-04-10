@@ -110,17 +110,17 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>n <Plug>AirlineSelectPrevTab
 nmap <leader>m <Plug>AirlineSelectNextTab
 
-" ctrlp.vim
-" Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
-"
-" Usage:
-"  Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode.
-"  Run :CtrlPBuffer or :CtrlPMRU to invoke CtrlP in find buffer or find MRU file mode.
-"  Run :CtrlPMixed to search in Files, Buffers and MRU files at the same time.
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_max_height = 30
-set wildignore+=*.pyc  " Ignore python byte codes
+
+" fzf.vim
+" A command-line fuzzy finder
+map <c-p> :Files<CR>
+nmap <leader><tab> <plug>(fzf-maps-n)
+xmap <leader><tab> <plug>(fzf-maps-x)
+omap <leader><tab> <plug>(fzf-maps-o)
+imap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-l> <plug>(fzf-complete-line)
+
 
 " CamelCaseMotion.vim
 " Motion for CamelCase and snake_case

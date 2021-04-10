@@ -4,9 +4,6 @@
 [submodule "vim-plugins/start/CamelCaseMotion"]
 	path = vim-plugins/start/CamelCaseMotion
 	url = https://github.com/bkad/CamelCaseMotion.git
-[submodule "vim-plugins/start/ctrlp.vim"]
-	path = vim-plugins/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "vim-plugins/start/FastFold"]
 	path = vim-plugins/start/FastFold
 	url = https://github.com/Konfekt/FastFold.git
@@ -70,3 +67,9 @@
 [submodule "vim-plugins/start/vim-mundo"]
 	path = vim-plugins/start/vim-mundo
 	url = https://github.com/simnalamburt/vim-mundo.git
+[submodule "vim-plugins/start/fzf"]
+	path = vim-plugins/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "vim-plugins/start/fzf.vim"]
+	path = vim-plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
