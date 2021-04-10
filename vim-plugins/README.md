@@ -12,9 +12,10 @@ git submodule add <repo>
 ## Update packages
 `git submodule update --remote --merge`
 
+
 ## Remove a package
 ```
-cd ~/.vim/pack/plugins
+cd ~/.vim/pack/plugins/start/
 git submodule deinit <plugin>
-rm -rf .git/modules/<plugin>
+rm -rf $DOTFILES/.git/modules/vim-plugins/start/<plugin>
 ```
