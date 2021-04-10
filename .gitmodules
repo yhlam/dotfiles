@@ -67,3 +67,6 @@
 [submodule "vim-plugins/start/vim-numbertoggle"]
 	path = vim-plugins/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "vim-plugins/start/vim-mundo"]
+	path = vim-plugins/start/vim-mundo
+	url = https://github.com/simnalamburt/vim-mundo.git

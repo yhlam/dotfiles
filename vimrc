@@ -79,6 +79,13 @@ colorscheme lucius
 hi Visual term=reverse cterm=reverse guibg=Grey
 
 
+" Undo tree
+" Save undo trees in files and set number of undo saved to 10,000
+set undofile
+set undodir=~/.vim/undo
+set undolevels=10000
+
+
 " Airline
 " Lean & mean status/tabline for vim that's light as air
 let g:airline_powerline_fonts = 1
