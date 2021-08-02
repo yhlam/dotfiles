@@ -103,6 +103,11 @@ fi
 # Override the alaias rm="rm -i" in the common-aliases plugin
 alias rm="rm -I"
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 # pipx
 export PATH="$PATH:/$HOME/.local/bin"
 
