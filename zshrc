@@ -65,6 +65,25 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# pipx
+export PATH="$PATH:/$HOME/.local/bin"
+
+# poetry
+export PATH="$PATH:/$HOME/.poetry/bin"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# local machine specific profile setup
+if [ -f ~/.zshrc_local ]; then
+    source ~/.zshrc_local
+fi
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -102,22 +121,3 @@ fi
 #
 # Override the alaias rm="rm -i" in the common-aliases plugin
 alias rm="rm -I"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
-# pipx
-export PATH="$PATH:/$HOME/.local/bin"
-
-# poetry
-export PATH="$PATH:/$HOME/.poetry/bin"
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# local machine specific profile setup
-if [ -f ~/.zshrc_local ]; then
-    source ~/.zshrc_local
-fi
