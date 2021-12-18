@@ -73,3 +73,6 @@
 [submodule "vim-plugins/start/fzf.vim"]
 	path = vim-plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim-plugins/start/vim-beancount"]
+	path = vim-plugins/start/vim-beancount
+	url = https://github.com/nathangrigg/vim-beancount.git
