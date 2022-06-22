@@ -70,7 +70,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode cp command-not-found common-aliases sudo ubuntu git python pyenv pip httpie)
+plugins=(vi-mode cp command-not-found common-aliases sudo ubuntu git python pyenv pip httpie dotenv)
 
 source $ZSH/oh-my-zsh.sh
 
