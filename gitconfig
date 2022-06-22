@@ -11,8 +11,8 @@
 	cm = commit
 	st = status -sb
 	br = branch
-	graph = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
-	gr = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+	graph = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(white)%s%C(reset) %C(bold white)— %C(reset)%C(bold cyan)%an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+	gr = graph
 	rb = rebase
 	ri = rebase -i
 	ss = show --stat --summary
