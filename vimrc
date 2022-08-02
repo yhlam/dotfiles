@@ -49,6 +49,7 @@ set tw=79 " width of document (used by gq)
 set nowrap " don't automatically wrap on load
 set fo-=t " don't automatically wrap text when typing
 autocmd FileType python  setlocal colorcolumn=80
+autocmd FileType rst     setlocal colorcolumn=80
 highlight ColorColumn ctermbg=235
 
 
