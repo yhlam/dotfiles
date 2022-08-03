@@ -155,27 +155,29 @@ let g:fastfold_fold_command_suffixes =  ['x','X','a','A','o','O','c','C']
 let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
 
 
-" Syntastic
-" Syntax checking hacks for vim
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['flake8', 'mypy']
-
-
 " Automatically removing all trailing whitespace for python
-autocmd FileType python autocmd BufWritePre <buffer> %s/\s\+$//e
+" autocmd FileType python autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Set python comment with space after #
 au FileType python set commentstring="# %s"
 
 
-" jedi-vim
-" Python autocompletion
-let g:jedi#completions_command = "<C-N>"
-let g:jedi#popup_select_first = 0
+" ALE
+let g:ale_linters = {
+\   'python': ['flake8', 'mypy', 'pylsp'],
+\}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['black', 'isort'],
+\   'javascript': ['eslint'],
+\}
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
