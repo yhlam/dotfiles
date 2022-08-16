@@ -174,6 +174,13 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 set omnifunc=ale#completion#OmniFunc
+map <leader>d :ALEGoToDefinition<CR>
+map <leader>t :ALEGoToTypeDefinition<CR>
+map <leader>i :ALEGoToImplementation<CR>
+map <leader>f :ALEFindReferences<CR>
+map <leader>h :ALEHover<CR>
+map <leader>r :ALERename<CR>
+map <leader>a :ALECodeAction<CR>
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
