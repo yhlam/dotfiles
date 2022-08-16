@@ -115,7 +115,7 @@ nmap <leader>m <Plug>AirlineSelectNextTab
 
 " fzf.vim
 " A command-line fuzzy finder
-map <c-p> :Files<CR>
+map <c-p> :GFiles -co --exclude-standard<CR>
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
