@@ -164,11 +164,11 @@ au FileType python set commentstring="# %s"
 
 " ALE
 let g:ale_linters = {
-\   'python': ['flake8', 'mypy', 'pylsp'],
+\   'python': ['ruff', 'mypy', 'pylsp'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'python': ['black', 'isort'],
+\   'python': ['ruff', 'black'],
 \   'javascript': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
