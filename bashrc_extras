@@ -19,7 +19,10 @@ export PATH="$PATH:/$HOME/.poetry/bin"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # mcfly
-eval "$(mcfly init bash)"
+if command -v mcfly &> /dev/null
+then
+    eval "$(mcfly init bash)"
+fi
 
 # local machine specific profile setup
 if [ -f ~/.bashrc_local ]; then
