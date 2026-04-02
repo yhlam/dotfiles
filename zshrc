@@ -118,3 +118,6 @@ source $ZSH/oh-my-zsh.sh
 
 # starship
 eval "$(starship init zsh)"
+
+# cargo
+. "$HOME/.cargo/env"
