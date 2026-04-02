@@ -7,6 +7,7 @@ ln -s $DIR/gitconfig $HOME/.gitconfig
 ln -s $DIR/inputrc $HOME/.inputrc
 ln -s $DIR/bashrc_extras $HOME/.bashrc_extras
 ln -s $DIR/zshrc $HOME/.zshrc
+ln -s $DIR/jj.toml $HOME/.config/jj/config.toml
 mkdir -p $HOME/.vim/pack
 ln -s -T $DIR/vim-plugins $HOME/.vim/pack/plugins
 

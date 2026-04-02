@@ -1,0 +1,29 @@
+[user]
+name = "Hei"
+email = "lamyuenhei@gmail.com"
+
+[revset-aliases]
+'closest_bookmark(to)' = 'heads(::to & bookmarks())'
+'closest_pushable(to)' = 'heads(::to & mutable() & ~description(exact:"") & (~empty() | merges()))'
+
+[aliases]
+e = ["edit"]
+ed = ["edit"]
+rb = ["rebase"]
+rs = ["restore"]
+bm = ["bookmark", "move"]
+push = ["git", "push"]
+pull = ["git", "fetch"]
+fetch = ["git", "fetch"]
+l = ["log", "-r", "@ | ancestors(remote_bookmarks().., 2) | trunk()"]
+ll = ["log", "-r", "::"]
+ss = ["show", "--stat"]
+cm = ["commit"]
+dup = ["duplicate"]
+tug = ["util", "exec", "--", "sh", "-c", """
+if [ "x$1" = "x" ]; then
+  jj bookmark move --from "closest_bookmark(@)" --to "closest_pushable(@)"
+else
+  jj bookmark move --to "closest_pushable(@)" "$@"
+fi
+""", ""]

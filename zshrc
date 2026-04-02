@@ -120,3 +120,6 @@ eval "$(starship init zsh)"
 
 # cargo
 . "$HOME/.cargo/env"
+
+# jj
+source <(COMPLETE=zsh jj)
