@@ -70,7 +70,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode cp command-not-found common-aliases sudo ubuntu git python pyenv pip dotenv)
+plugins=(vi-mode cp command-not-found common-aliases sudo ubuntu git python pip dotenv)
 
 # User configuration
 
@@ -102,7 +102,6 @@ fi
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # local bin
 export PATH="$PATH:/$HOME/.local/bin"
